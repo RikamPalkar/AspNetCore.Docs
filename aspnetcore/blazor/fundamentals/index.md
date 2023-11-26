@@ -53,6 +53,7 @@ Blazor documentation adopts several conventions for showing and discussing compo
 * Project code, file paths and names, project template names, and other specialized terms are in United States English and usually code-fenced.
 * Components are usually referred to by their C# class name (Pascal case) followed by the word "component." For example, a typical file upload component is referred to as the "`FileUpload` component."
 * Usually, a component's C# class name is the same as its file name.
+* Components can be classified as either routable or non-routable. Routable components define specific routes, accessible via URLs such as `/about`, enabling direct navigation. On the other hand, non-routable components are often reused by other components via encapsulation.
 * Routable components usually set their relative URLs to the component's class name in kebab-case. For example, a `FileUpload` component includes routing configuration to reach the rendered component at the relative URL `/file-upload`. Routing and navigation is covered in <xref:blazor/fundamentals/routing>.
 * When multiple versions of a component are used, they're numbered sequentially. For example, the `FileUpload3` component is reached at `/file-upload-3`.
 * Access modifiers are used in article examples. For example, fields are `private` by default but are explicitly present in component code. For example, `private` is stated for declaring a field named `maxAllowedFiles` as `private int maxAllowedFiles = 3;`.
